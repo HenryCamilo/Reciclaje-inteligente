@@ -1,16 +1,16 @@
-# 🧠 Object Detection and Measurement with YOLOv8 and ArUco Markers
+# Object Detection and Measurement with YOLOv8 and ArUco Markers
 
 **Authors:**  
-- 👨‍💻 Henry Camilo Valencia — 2190564  
-- 👨‍💻 Juan Andrés Chacón — 2200015  
+- Henry Camilo Valencia 
+- Juan Andrés Chacón 
 
 ---
 
-## 📖 Overview
+## Overview
 
 This project implements a **real-time object detection, classification, and measurement system** using a **YOLOv8 model** with custom-trained weights and **ArUco markers** for **scale calibration**.
 
-The main goal is to estimate the **real-world dimensions (in centimeters)** and **approximate volume** of detected objects from a live video stream (e.g., webcam or IP camera).  
+The main goal is to estimate the **real-world dimensions (in centimeters)** and **approximate volume** of detected objects(bottles and cans) from a live video stream (e.g., webcam or IP camera).  
 
 ---
 
@@ -20,14 +20,13 @@ The main goal is to estimate the **real-world dimensions (in centimeters)** and 
 - **OpenCV (cv2)** — image processing, ArUco detection, and visualization.
 - **NumPy** — mathematical operations and matrix handling.
 - **Ultralytics YOLOv8** — object detection model.
-- **AzureML (used for model training)** — model management and experimentation.
 - **ArUco (cv2.aruco)** — for scale calibration and spatial measurement.
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
-1. **Detect objects in real time** using a YOLOv8 trained model.  
+1. **Detect objects (bottles and cans) in real time** using a YOLOv8 trained model.  
 2. **Recognize ArUco markers** to calculate the pixel-to-centimeter ratio (real-world scale).  
 3. **Measure real dimensions (width and height)** of detected objects.  
 4. **Estimate the approximate volume** of each object, assuming a cylindrical shape.  
@@ -35,7 +34,7 @@ The main goal is to estimate the **real-world dimensions (in centimeters)** and 
 
 ---
 
-## 🧩 Code Structure
+## Code Structure
 
 ### 1. **Model Loading**
 The script imports required libraries and loads the trained YOLOv8 model.
@@ -118,7 +117,7 @@ Press **Q** to exit.
 
 ---
 
-## 📏 Mathematical Formulas
+## Mathematical Formulas
 
 1. **Scale (pixel/cm ratio):**  
    \[ scale = \frac{marker\_length}{pixel\_distance} \]
@@ -132,7 +131,7 @@ Press **Q** to exit.
 
 ---
 
-## 🧠 Key Concepts
+## Key Concepts
 
 - **YOLOv8:** Real-time object detection model developed by Ultralytics.  
 - **ArUco Marker:** Square fiducial marker used for calibration and pose estimation.  
@@ -140,7 +139,7 @@ Press **Q** to exit.
 
 ---
 
-## 🧰 Requirements
+## Requirements
 
 Install required dependencies:
 
@@ -150,7 +149,7 @@ pip install opencv-python ultralytics numpy
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 
 1. Connect your camera or configure the IP stream:  
    ```python
@@ -165,7 +164,7 @@ pip install opencv-python ultralytics numpy
 
 ---
 
-## 📸 Expected Output
+## Expected Output
 
 The system displays:  
 - Real-time object detection.  
@@ -177,7 +176,7 @@ The system displays:
 
 ---
 
-## 📚 Future Improvements
+## Future Improvements
 
 - Add multiple ArUco markers for better calibration.  
 - Implement data logging of measurements.  
@@ -186,7 +185,7 @@ The system displays:
 
 ---
 
-## 🧾 License
+## License
 
 This project was developed for **academic and research purposes** as part of a specialization in **Artificial Intelligence**.  
 Free to use and modify with author attribution.
