@@ -1,8 +1,8 @@
 # Detección y medición de objetos con YOLOv8 y marcadores ArUco
 
 **Autores:**
-- Henry Camilo Valencia — 2190564
-- Juan Andrés Chacón — 2200015
+- Henry Camilo Valencia
+- Juan Andrés Chacón 
 
 ---
 
@@ -10,7 +10,7 @@
 
 Este proyecto implementa un **sistema de detección, clasificación y medición de objetos en tiempo real** mediante un **modelo YOLOv8** con pesos entrenados a medida y **marcadores ArUco** para la **calibración de escala**.
 
-El objetivo principal es estimar las **dimensiones reales (en centímetros)** y el **volumen aproximado** de los objetos detectados a partir de una transmisión de vídeo en directo (p. ej., cámara web o cámara IP).
+El objetivo principal es estimar las **dimensiones reales (en centímetros)** y el **volumen aproximado** de los objetos(Botellas y latas) detectados a partir de una transmisión de vídeo en directo (p. ej., cámara web o cámara IP).
 
 ---
 
@@ -22,9 +22,7 @@ El objetivo principal es estimar las **dimensiones reales (en centímetros)** y 
 
 - **NumPy** — operaciones matemáticas y manipulación de matrices.
 
-- **Ultralytics YOLOv8** — modelo de detección de objetos.
-
-- **AzureML (utilizado para el entrenamiento del modelo)** — gestión y experimentación del modelo.
+- **Ultralytics YOLOv8** — modelo de detección de objetos(Botellas y latas).
 
 - **ArUco (cv2.aruco)** — para la calibración de escala y la medición espacial.
 
@@ -32,7 +30,7 @@ El objetivo principal es estimar las **dimensiones reales (en centímetros)** y 
 
 ## Objetivos del proyecto
 
-1. **Detectar objetos en tiempo real** utilizando un modelo YOLOv8 entrenado.
+1. **Detectar objetos(botellas y latas) en tiempo real** utilizando un modelo YOLOv8 entrenado.
 
 2. **Reconocer marcadores ArUco** para calcular la relación píxel-centímetro (escala real).
 
